@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://polygonvashu-commits.github.io/vashuportfolio99/sitemap.xml
+Sitemap: https://www.vashusangwan.online/sitemap.xml
