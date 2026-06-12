@@ -942,6 +942,34 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.contact-info h1 {
+    font-size: 2rem;
+    background: var(--grad-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info h2 {
+    font-size: 1.25rem;
+    color: var(--color-cyan);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.contact-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
 .contact-details {
     display: flex;
     flex-direction: column;
