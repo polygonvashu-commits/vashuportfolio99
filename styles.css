@@ -1244,6 +1244,15 @@ section {
         grid-template-columns: 1fr;
         padding-top: 8rem;
         gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-content {
+        align-items: center;
+    }
+    
+    .hero-actions {
+        justify-content: center;
     }
     
     .hero-visual {
@@ -1285,6 +1294,8 @@ section {
         height: calc(100vh - 70px);
         background: var(--bg-main);
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 3rem 2rem;
         transition: var(--transition-smooth);
         z-index: 99;
@@ -1301,6 +1312,7 @@ section {
     
     .hero-subtitle {
         font-size: 1rem;
+        text-align: center;
     }
     
     .hero-visual {
@@ -1308,7 +1320,15 @@ section {
     }
     
     .visual-wrapper {
-        transform: scale(0.8);
+        transform: scale(0.75);
+    }
+    
+    .web-card {
+        left: -15px; /* Pull inward to prevent overflow */
+    }
+    
+    .ai-card {
+        right: -15px; /* Pull inward to prevent overflow */
     }
 
     .stats-grid {
