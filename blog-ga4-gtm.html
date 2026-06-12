@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Server-Side Tracking guide. How setting up GA4 and Google Tag Manager server containers protects data, bypasses browser limits, and maximizes ad mapping. By Vashu Sangwan.">
+    <meta name="author" content="Vashu Sangwan">
+    <title>Server-Side Tracking: GA4 & GTM Setup Guide | Vashu Sangwan</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">VS</span>.dev
+            </a>
+            <nav class="navbar">
+                <a href="index.html#hero" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#calculator" class="nav-link">ROI Calculator</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="index.html#contact" class="nav-link nav-btn">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-post-container card-glass">
+        <a href="blog.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+        
+        <header class="blog-post-header">
+            <div class="blog-meta">
+                <span class="blog-tag text-blue">Web Analytics</span>
+                <span class="blog-date">June 10, 2026</span>
+            </div>
+            <h1>Server-Side Tracking: GA4 & GTM Setup Guide</h1>
+            <div class="blog-post-meta">
+                <span>By Vashu Sangwan</span>
+                <span>• 5 Min Read</span>
+            </div>
+        </header>
+
+        <article class="blog-post-content">
+            <p>Google Analytics 4 (GA4) and Google Tag Manager (GTM) represent the standard in web telemetry. However, standard browser implementation suffers from data leaks and ad blocker blockages. Introducing **Server-Side GTM Containers** solves these tracking limitations by moving measurement logic off the user’s computer onto a custom cloud server.</p>
+
+            <h2>Why Browser GTM is No Longer Sufficient</h2>
+            <p>Traditional GTM injects JavaScript code snippets into the client's browser, which loads third-party tracking scripts. Because ad blockers easily identify these scripts, they block their execution completely. Moving to a server container routes all client requests directly to your own subdomain (e.g., `metrics.yourdomain.com`), transforming the tracking requests into secure first-party data transactions.</p>
+
+            <h2>Benefits of GA4 Server-Side Integration</h2>
+            <ul>
+                <li><strong>Controlled Data Dispersion:</strong> You filter and clean data payloads on your own server before sending them to Google Analytics or Facebook, ensuring user privacy compliance.</li>
+                <li><strong>Page Load Speed Boost:</strong> Moving data transmission off the browser means less client-side Javascript execution, leading to faster paint speeds.</li>
+                <li><strong>Enhanced Security:</strong> Protect API key credentials by keeping them on the server rather than exposing them in client-side script code.</li>
+            </ul>
+
+            <h2>Need Server-Side Tracking Configured?</h2>
+            <p>I build custom GTM server instances utilizing Google Cloud Platform (GCP) or Stape.io systems. Reach out today for a tracking calibration check!</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Vashu Sangwan. All rights reserved.</p>
+            <p class="footer-subtext">BCA Amity University Noida | Freelance Tech & Sales Optimization</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

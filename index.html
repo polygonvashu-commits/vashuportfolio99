@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vashu Sangwan - Freelance App & Web Developer, Meta DS Specialist, AI & Automation expert. Transforming businesses with modern technologies. BCA student at Amity University Noida.">
+    <meta name="author" content="Vashu Sangwan">
+    <title>Vashu Sangwan | Freelance App & Web Developer & Meta DS Specialist</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Grid & Glows -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+    <!-- Space Particle Animation Canvas -->
+    <canvas id="space-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="gradient-text">VS</span>.dev
+            </a>
+            
+            <nav class="navbar">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#calculator" class="nav-link">ROI Calculator</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="#" class="nav-link nav-btn open-modal-btn">Contact Me</a>
+            </nav>
+
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="badge fade-in">
+                    <span class="pulse-dot"></span> Available for Freelance & Projects
+                </div>
+                <h1 class="hero-title fade-in">
+                    Scaling Businesses With <br>
+                    <span class="gradient-text">Next-Gen Apps, Web & AI</span>
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Hi, I'm <strong>Vashu Sangwan</strong>. A passionate Developer, Meta DS Specialist, and Automation Architect. I help brands build powerful web/mobile applications and deploy AI tools that boost sales and skyrocket social presence.
+                </p>
+                <div class="hero-actions fade-in">
+                    <a href="#" class="btn btn-primary open-modal-btn">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#services" class="btn btn-secondary">Explore Solutions</a>
+                </div>
+            </div>
+
+            <!-- Visual Floating Cards element -->
+            <div class="hero-visual fade-in">
+                <div class="visual-wrapper">
+                    <div class="floating-card web-card">
+                        <i class="fa-solid fa-code text-cyan"></i>
+                        <div>
+                            <h4>Web & Mobile Apps</h4>
+                            <p>Fast, responsive & custom built</p>
+                        </div>
+                    </div>
+                    <div class="floating-card ai-card">
+                        <i class="fa-solid fa-robot text-purple"></i>
+                        <div>
+                            <h4>AI & Automation</h4>
+                            <p>Save hours of manual tasks</p>
+                        </div>
+                    </div>
+                    <div class="floating-card meta-card">
+                        <i class="fa-brands fa-meta text-blue"></i>
+                        <div>
+                            <h4>Meta DS & Ad Systems</h4>
+                            <p>Data-driven sales growth</p>
+                        </div>
+                    </div>
+                    <!-- Central Hologram Sphere -->
+                    <div class="tech-sphere">
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="core-glow"></div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Trust Banner / Brands -->
+        <section class="trust-banner fade-in">
+            <p class="trust-label">TRUSTED BY INNOVATIVE BRANDS WORLDWIDE</p>
+            <div class="brands-grid">
+                <span class="brand-item"><i class="fa-solid fa-bolt text-cyan"></i> BoltTech Agency</span>
+                <span class="brand-item"><i class="fa-solid fa-code text-purple"></i> DevStack Solutions</span>
+                <span class="brand-item"><i class="fa-solid fa-chart-line text-blue"></i> MatchAd Marketing</span>
+                <span class="brand-item"><i class="fa-solid fa-robot text-green"></i> AutoFlow Systems</span>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="99">0</h3>
+                    <p class="stat-label">Client Satisfaction %</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p class="stat-label">Tech Stack Mastered</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="10">0</h3>
+                    <p class="stat-label">AI Automations Deployed</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="2">0</h3>
+                    <p class="stat-label">x Sales ROI Driven</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Experience Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">My Journey</span>
+                <h2>Who is Vashu Sangwan?</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-info card-glass">
+                    <h3>Empowering Digital Success</h3>
+                    <p>
+                        I am currently pursuing my <strong>Bachelor of Computer Applications (BCA) at Amity University Noida</strong>. Building coding fundamentals alongside deploying production-level client products has allowed me to bridge the gap between academic theory and real-world execution.
+                    </p>
+                    <p>
+                        My passion lies in using advanced tech stack solutions, machine learning, and marketing automations to help businesses grow. By combining modern app/web development with <strong>Meta DS (Data & Discovery Commerce Solutions)</strong>, I build workflows that directly capture user intent and generate measurable sales.
+                    </p>
+                    <div class="education-badge">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <h4>BCA Student</h4>
+                            <p>Amity University Noida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline card-glass">
+                    <h3>Experience Highlight</h3>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Present</span>
+                        <h4>Freelance App & Web Developer</h4>
+                        <p>Designing, coding, and maintaining robust applications using cutting edge frontend and backend technologies for clients worldwide.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Meta DS</span>
+                        <h4>Meta Data & Conversion Specialist</h4>
+                        <p>Integrating conversion APIs, server-side tracking, and leveraging data-driven analytics to maximize sales and optimize ad performance.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">AI Dev</span>
+                        <h4>AI & Automation Developer</h4>
+                        <p>Building custom automation scripts, LLM integrations, and bots to streamline operational efficiency for small-to-medium businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">Solutions Offered</span>
+                <h2>How I Help Your Business Grow</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card card-glass">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Responsive, blazing fast, SEO-optimized web systems and platforms built to engage users and convert visitors into clients.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Single Page Applications</li>
+                        <li><i class="fa-solid fa-circle-check"></i> E-commerce Platforms</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Web Portals & CMS</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card card-glass">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>App Development</h3>
+                    <p>Premium mobile apps built with stunning user interfaces, offline functionality, and fluid user experiences for iOS & Android.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Multi-platform apps</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Interactive UI/UX Animations</li>
+                        <li><i class="fa-solid fa-circle-check"></i> API Integrations</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card card-glass">
+                    <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>AI & Automation</h3>
+                    <p>Optimize operations and customer relations by deploying smart bots, automated lead scoring, and custom artificial intelligence pipelines.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Custom CRM Integrations</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Intelligent Chatbots & Assistants</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Repetitive Task Automation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card card-glass">
+                    <div class="service-icon"><i class="fa-brands fa-meta"></i></div>
+                    <h3>Meta DS & Social Growth</h3>
+                    <p>Maximize your social presence and lead conversion using advanced analytics, event matching, and custom tracking solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Conversion API (CAPI) Tracking</li>
+                        <li><i class="fa-solid fa-circle-check"></i> High-converting Landing Pages</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Marketing Data Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">My Capabilities</span>
+                <h2>Tech Stack & Expertise</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-container card-glass">
+                <div class="skills-categories">
+                    <button class="skill-tab-btn active" data-category="all">All Tech</button>
+                    <button class="skill-tab-btn" data-category="web">Web & App</button>
+                    <button class="skill-tab-btn" data-category="ai">AI & Automation</button>
+                    <button class="skill-tab-btn" data-category="meta">Data & Meta DS</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Web/App -->
+                    <div class="skill-item" data-category="web">
+                        <i class="fa-brands fa-js skill-icon text-yellow"></i>
+                        <span>JavaScript (ES6+)</span>
+                    </div>
+                    <div class="skill-item" data-category="web">
+                        <i class="fa-brands fa-react skill-icon text-cyan"></i>
+                        <span>React.js / React Native</span>
+                    </div>
+                    <div class="skill-item" data-category="web">
+                        <i class="fa-brands fa-node-js skill-icon text-green"></i>
+                        <span>Node.js & Express</span>
+                    </div>
+                    <div class="skill-item" data-category="web">
+                        <i class="fa-brands fa-html5 skill-icon text-orange"></i>
+                        <span>HTML5 & Semantic Web</span>
+                    </div>
+                    <div class="skill-item" data-category="web">
+                        <i class="fa-brands fa-css3-alt skill-icon text-blue"></i>
+                        <span>CSS3 & Modern Layouts</span>
+                    </div>
+                    
+                    <!-- AI / Automation -->
+                    <div class="skill-item" data-category="ai">
+                        <i class="fa-solid fa-brain skill-icon text-purple"></i>
+                        <span>LLM Integration & Prompt Eng</span>
+                    </div>
+                    <div class="skill-item" data-category="ai">
+                        <i class="fa-brands fa-python skill-icon text-blue"></i>
+                        <span>Python Scripts</span>
+                    </div>
+                    <div class="skill-item" data-category="ai">
+                        <i class="fa-solid fa-gears skill-icon text-cyan"></i>
+                        <span>Workflow Automation (n8n/Make)</span>
+                    </div>
+                    
+                    <!-- Meta DS / Data -->
+                    <div class="skill-item" data-category="meta">
+                        <i class="fa-brands fa-meta skill-icon text-blue"></i>
+                        <span>Meta Conversions API</span>
+                    </div>
+                    <div class="skill-item" data-category="meta">
+                        <i class="fa-solid fa-chart-line skill-icon text-green"></i>
+                        <span>Google Tag Manager & GA4</span>
+                    </div>
+                    <div class="skill-item" data-category="meta">
+                        <i class="fa-solid fa-database skill-icon text-purple"></i>
+                        <span>SQL & Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive ROI Calculator Section -->
+        <section id="calculator" class="calculator-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">Calculate Savings</span>
+                <h2>AI & Automation Impact Calculator</h2>
+                <p class="section-intro">See how much time and money Vashu's tech solutions can save your business monthly.</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="calculator-container card-glass">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="hours-spent">Manual Tasks (Hours / Week)</label>
+                        <p class="input-desc">Time spent on social posting, lead collection, data entry, etc.</p>
+                        <div class="range-container">
+                            <input type="range" id="hours-spent" min="5" max="80" value="20" class="slider">
+                            <span class="range-val" id="hours-spent-val">20 hrs</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="labor-cost">Average Value per Hour (USD / INR eq.)</label>
+                        <p class="input-desc">Cost of labor or your target revenue generation per hour.</p>
+                        <div class="range-container">
+                            <input type="range" id="labor-cost" min="10" max="150" value="25" class="slider">
+                            <span class="range-val" id="labor-cost-val">$25/hr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-results">
+                    <div class="result-box">
+                        <p>Estimated Monthly Hours Saved</p>
+                        <h3 id="result-hours" class="gradient-text">64 hrs</h3>
+                    </div>
+                    <div class="result-box">
+                        <p>Estimated Monthly Cash Saved</p>
+                        <h3 id="result-cash" class="gradient-text">$1,600</h3>
+                    </div>
+                    <div class="result-box highlighted">
+                        <p>Efficiency Multiplier</p>
+                        <h3>4.5x Faster</h3>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-block open-modal-btn">Claim These Savings Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">Insights & News</span>
+                <h2>Highly Optimized Tech Blogs</h2>
+                <p class="section-intro">Practical guides on leveraging Meta Tracking, modern apps, and AI automations to boost your business presence and revenue.</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="blog-cards-grid">
+                <!-- Blog 1 -->
+                <article class="blog-card card-glass">
+                    <div class="blog-meta">
+                        <span class="blog-tag text-blue">Meta DS</span>
+                        <span class="blog-date">June 2026</span>
+                    </div>
+                    <h3><a href="blog-meta-capi.html">How Meta Conversions API (CAPI) Boosts Ad Sales by Up to 37%</a></h3>
+                    <p>Learn how server-side tracking solves cookie loss issues, increases attribution accuracy, and boosts conversion rates for e-commerce and lead-gen campaigns.</p>
+                    <a href="blog-meta-capi.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card card-glass">
+                    <div class="blog-meta">
+                        <span class="blog-tag text-purple">AI & Automation</span>
+                        <span class="blog-date">June 2026</span>
+                    </div>
+                    <h3><a href="blog-ai-automation.html">Automating Business Operations: Integrating LLMs and n8n Workflows</a></h3>
+                    <p>A complete walkthrough on connecting your CRM with advanced AI models to handle repetitive administrative tasks and double efficiency.</p>
+                    <a href="blog-ai-automation.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card card-glass">
+                    <div class="blog-meta">
+                        <span class="blog-tag text-cyan">App & Web Dev</span>
+                        <span class="blog-date">May 2026</span>
+                    </div>
+                    <h3><a href="blog-custom-apps.html">Why Template Builders Fail: The Power of Custom Web & Mobile Apps</a></h3>
+                    <p>Template builders might seem fast, but code-first bespoke apps bring unparalleled SEO performance, conversion metrics, and visual customizability.</p>
+                    <a href="blog-custom-apps.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+            </div>
+
+            <div class="blog-more-btn">
+                <a href="blog.html" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section id="faq" class="faq-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">Got Questions?</span>
+                <h2>Frequently Asked Questions</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item card-glass">
+                    <div class="faq-question">
+                        <h4>What services do you offer?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I build custom web applications (React, Node.js), mobile apps (React Native), integrate AI/LLM models, design automated workflows (n8n/Make), and set up advanced Meta Conversions API tracking for ads data optimization.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass">
+                    <div class="faq-question">
+                        <h4>How does the Meta DS Conversions API help my business?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard browser pixels miss over 30% of data due to iOS restrictions and ad blockers. Meta Conversions API sets up server-to-server tracking so that event matching, attribution, and custom audiences are completely accurate, maximizing your ROAS.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass">
+                    <div class="faq-question">
+                        <h4>Can you automate my manual accounting / CRM updates?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. I connect your CRM tools (Salesforce, HubSpot), bookkeeping apps (QuickBooks), email boxes, and Google Sheets using automated workflow engines (n8n, Python) to execute repetitive tasks hands-free.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass">
+                    <div class="faq-question">
+                        <h4>Do we sign a Non-Disclosure Agreement (NDA)?</h4>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Before analyzing details or integrations, we sign a comprehensive NDA to guarantee your database structures, codes, and customer parameters remain fully secure and confidential.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tagline">Get In Touch</span>
+                <h2>Let's Boost Your Sales & Presence</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info card -->
+                <div class="contact-info card-glass">
+                    <h3>Connect Instantly</h3>
+                    <p>Have an application idea, need to connect your offline analytics to Meta Ads, or looking to automate repetitive business processes? Reach out directly via the options below!</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span>Direct Call / Business line</span>
+                                <a href="tel:+918950929482" class="detail-link">+91 89509 29482</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <span>WhatsApp chat</span>
+                                <a href="https://wa.me/919996829482?text=Hi%20Vashu%2C%20I%20am%20interested%20in%20your%20services%21" target="_blank" class="detail-link">+91 99968 29482</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span>Based In</span>
+                                <p>Noida / Delhi NCR, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive message shortcut -->
+                <div class="contact-action card-glass">
+                    <h3>Quick Message Form</h3>
+                    <form id="contact-form" class="custom-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-biz">Business / Project Name</label>
+                                <input type="text" id="form-biz" placeholder="Apex Inc.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-needs">What do you need help with?</label>
+                            <select id="form-needs">
+                                <option value="Web & App Development">Web & Mobile Application Development</option>
+                                <option value="Meta Ads & DS tracking">Meta Data Science & Event Tracking</option>
+                                <option value="AI / Bot automation">AI Automations & Integrations</option>
+                                <option value="Social growth support">Social & Sales Growth</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-msg">Project brief (Optional)</label>
+                            <textarea id="form-msg" rows="4" placeholder="Briefly describe your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send WhatsApp Inquiry <i class="fa-brands fa-whatsapp"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lead/Contact Modal Popup -->
+    <div id="contact-modal" class="modal-overlay">
+        <div class="modal-content card-glass">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <span class="section-tagline">Launch Your Project</span>
+                <h3>Work With Vashu Sangwan</h3>
+                <p>Fill in details below to start scaling your business with App, Web, or AI Automation solutions.</p>
+            </div>
+            <form id="modal-contact-form" class="custom-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-name">Your Name</label>
+                        <input type="text" id="modal-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-biz">Business Name</label>
+                        <input type="text" id="modal-biz" placeholder="Apex Inc.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="modal-needs">What services do you need?</label>
+                    <select id="modal-needs">
+                        <option value="Web & App Development">Web & Mobile Application Development</option>
+                        <option value="Meta Ads & DS tracking">Meta Data Science & Event Tracking</option>
+                        <option value="AI & Automation Integration">AI Automations & Integrations</option>
+                        <option value="Complete Growth Support">Social & Sales Growth</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-msg">Project brief (Optional)</label>
+                    <textarea id="modal-msg" rows="3" placeholder="Briefly describe your requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit & WhatsApp Chat <i class="fa-brands fa-whatsapp"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Vashu Sangwan. All rights reserved.</p>
+            <p class="footer-subtext">BCA Amity University Noida | Freelance Tech & Sales Optimization</p>
+            <p class="footer-subtext"><a href="privacy.html" style="color: var(--text-muted); margin-right: 1rem;">Privacy Policy</a> <a href="terms.html" style="color: var(--text-muted);">Terms & Services</a></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Widget -->
+    <a href="https://wa.me/919996829482?text=Hi%20Vashu%2C%20I%20am%20interested%20in%20your%20services%21" target="_blank" class="float-wa-btn" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-tooltip">Quick Chat 🔥</span>
+    </a>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
