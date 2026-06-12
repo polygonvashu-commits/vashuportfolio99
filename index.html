@@ -14,6 +14,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- FAQ Schema for Crawlability -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What services do you offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I build custom web applications (React, Node.js), mobile apps (React Native), integrate AI/LLM models, design automated workflows (n8n/Make), and set up advanced Meta Conversions API tracking for ads data optimization."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does the Meta DS Conversions API help my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard browser pixels miss over 30% of data due to iOS restrictions and ad blockers. Meta Conversions API sets up server-to-server tracking so that event matching, attribution, and custom audiences are completely accurate, maximizing your ROAS."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you automate my manual accounting / CRM updates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. I connect your CRM tools (Salesforce, HubSpot), bookkeeping apps (QuickBooks), email boxes, and Google Sheets using automated workflow engines (n8n, Python) to execute repetitive tasks hands-free."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do we sign a Non-Disclosure Agreement (NDA)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Before analyzing details or integrations, we sign a comprehensive NDA to guarantee your database structures, codes, and customer parameters remain fully secure and confidential."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Services Indexing Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vashu Sangwan | Freelance App, Web Developer & Meta DS Specialist",
+      "image": "https://polygonvashu-commits.github.io/vashuportfolio99/logo.png",
+      "url": "https://polygonvashu-commits.github.io/vashuportfolio99/index.html",
+      "telephone": "+918950929482",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Noida",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "knowsAbout": ["Web Development", "Mobile App Development", "AI Automation", "Meta Conversions API", "Data Science", "Conversion Rate Optimization"],
+      "offers": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Bespoke fast, responsive, and SEO-optimized web systems."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "Multi-platform responsive apps built using React Native."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI & Operations Automation",
+            "description": "Self-healing back-office workflows utilizing n8n, Make, and LLMs."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Meta Ads DS Tracking Solutions",
+            "description": "Conversion API setup and Google Tag Manager server containment integration."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Background Grid & Glows -->
