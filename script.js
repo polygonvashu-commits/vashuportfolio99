@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-        fetch('https://formsubmit.co/ajax/vashusangwan8950929482@gmail.com', {
+        fetch('https://formsubmit.co/ajax/vashusangwan6@gmail.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-            fetch('https://formsubmit.co/ajax/vashusangwan8950929482@gmail.com', {
+            fetch('https://formsubmit.co/ajax/vashusangwan6@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
