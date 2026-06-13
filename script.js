@@ -211,13 +211,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const serviceNeeded = document.getElementById('form-needs').value;
         const msg = document.getElementById('form-msg').value || 'Hello!';
 
-        // Formatting message for WhatsApp API
-        const text = `Hi Vashu, I am writing to you from your Portfolio.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Business:* ${encodeURIComponent(business)}%0A*Requirement:* ${encodeURIComponent(serviceNeeded)}%0A*Message:* ${encodeURIComponent(msg)}`;
-        
-        const waLink = `https://wa.me/919996829482?text=${text}`;
-        
-        // Open WhatsApp chat window
-        window.open(waLink, '_blank');
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+        fetch('https://formsubmit.co/ajax/vashusangwan8950929482@gmail.com', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                Name: name,
+                Business: business,
+                Requirement: serviceNeeded,
+                Message: msg
+            })
+        })
+        .then(() => {
+            window.location.href = 'thankyou.html';
+        })
+        .catch((err) => {
+            console.error('Error submitting form:', err);
+            window.location.href = 'thankyou.html'; // Fallback
+        });
     });
 
     // --- Space Canvas Particle Starfield Animation ---
@@ -375,11 +393,32 @@ document.addEventListener('DOMContentLoaded', () => {
             const service = document.getElementById('modal-needs').value;
             const msg = document.getElementById('modal-msg').value || 'Hello Vashu!';
 
-            const text = `Hi Vashu, I am requesting a project quote from your Portfolio Modal Popup.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Business Name:* ${encodeURIComponent(business)}%0A*Service:* ${encodeURIComponent(service)}%0A*Project details:* ${encodeURIComponent(msg)}`;
-            const waLink = `https://wa.me/919996829482?text=${text}`;
-            
-            window.open(waLink, '_blank');
-            closeModal();
+            const submitBtn = modalForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+            fetch('https://formsubmit.co/ajax/vashusangwan8950929482@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    Name: name,
+                    Business: business,
+                    Service: service,
+                    Message: msg
+                })
+            })
+            .then(() => {
+                closeModal();
+                window.location.href = 'thankyou.html';
+            })
+            .catch((err) => {
+                console.error('Error submitting modal form:', err);
+                closeModal();
+                window.location.href = 'thankyou.html';
+            });
         });
     }
 
