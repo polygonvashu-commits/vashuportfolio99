@@ -38,25 +38,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Active Link Highlight on Scroll ---
+    // --- Dynamic Scroll Progress Indicator ---
+    const progressEl = document.createElement('div');
+    progressEl.className = 'scroll-progress-bar';
+    document.body.appendChild(progressEl);
+
+    // --- Active Link Highlight & Scroll Progress (Optimized via requestAnimationFrame) ---
     const sections = document.querySelectorAll('section[id]');
+    let ticking = false;
     
-    const highlightNav = () => {
+    const onScroll = () => {
         const scrollY = window.pageYOffset;
         
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 100;
             const sectionId = current.getAttribute('id');
+            const navLink = document.querySelector('.navbar a[href*=' + sectionId + ']');
             
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelector('.navbar a[href*=' + sectionId + ']').classList.add('active');
-            } else {
-                document.querySelector('.navbar a[href*=' + sectionId + ']').classList.remove('active');
+            if (navLink) {
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLink.classList.add('active');
+                } else {
+                    navLink.classList.remove('active');
+                }
             }
         });
+
+        // Update progress bar
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        progressEl.style.width = scrolled + '%';
+
+        ticking = false;
     };
-    window.addEventListener('scroll', highlightNav);
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(onScroll);
+            ticking = true;
+        }
+    }, { passive: true });
 
     // --- Intersection Observer for Scroll Reveals ---
     const revealElements = document.querySelectorAll('.scroll-reveal');
@@ -203,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctx = canvas.getContext('2d');
         let stars = [];
         let shootingStars = [];
-        let numStars = window.innerWidth < 768 ? 60 : 130; // Calibrate for mobile performance
+        let numStars = window.innerWidth < 768 ? 30 : 130; // Calibrate for mobile performance
         let speedMultiplier = 0.3;
 
         const resizeCanvas = () => {
@@ -360,17 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Dynamic Scroll Progress Indicator ---
-    const progressEl = document.createElement('div');
-    progressEl.className = 'scroll-progress-bar';
-    document.body.appendChild(progressEl);
-
-    window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        progressEl.style.width = scrolled + '%';
-    });
+    // (Combined into optimized scroll loop at the top of the file)
 
     // --- FAQ Accordion Controls ---
     const faqItems = document.querySelectorAll('.faq-item');
