@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a Project Quote. Partner with Vashu Sangwan - Freelance Web Developer & App Developer India. Get custom digital solutions.">
+    <meta name="author" content="Vashu Sangwan">
+    <title>Request a Consultation | Vashu Sangwan</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Grid & Glows -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+    <!-- Space Particle Animation Canvas -->
+    <canvas id="space-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">VS</span>.dev
+            </a>
+            <nav class="navbar">
+                <a href="index.html#hero" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#calculator" class="nav-link">ROI Calculator</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link active">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 8rem; min-height: 80vh;">
+        <!-- Contact Section -->
+        <section class="contact-section" style="padding: 2rem 0 6rem;">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <span class="section-tagline">Consultation Form</span>
+                <h1>Propel Your Business with Expert Web Development Services</h1>
+                <h2>Partner with a Premier Freelance Web Developer in India</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info card -->
+                <div class="contact-info card-glass">
+                    <p>Initiate your project with Vashu Sangwan Web Solutions to elevate your business through sophisticated application development, strategic AI automation, or advanced Meta Ads data solutions. As a leading <b>freelance web developer india</b>, we provide custom digital solutions designed to drive growth and operational efficiency. Begin the process of transforming your digital presence by providing your project details below.</p>
+                    
+                    <h3>Comprehensive Digital Solutions</h3>
+                    <p>Our firm specializes in a range of high-demand technology sectors. We offer premier <b>web development services</b> tailored to the specific needs of your enterprise.</p>
+                    
+                    <ul style="list-style: none; margin: 1.5rem 0; padding-left: 0.5rem;">
+                        <li style="margin-bottom: 0.75rem;"><i class="fa-solid fa-circle-check text-cyan" style="margin-right: 0.5rem;"></i> <b>Custom Web &amp; Mobile Application Development:</b> As a seasoned <b>app developer india</b>, we build scalable and robust applications for all platforms.</li>
+                        <li style="margin-bottom: 0.75rem;"><i class="fa-solid fa-circle-check text-cyan" style="margin-right: 0.5rem;"></i> <b>AI Automation &amp; Integrations:</b> We leverage artificial intelligence to automate complex business processes, increasing productivity and reducing operational costs.</li>
+                        <li style="margin-bottom: 0.75rem;"><i class="fa-solid fa-circle-check text-cyan" style="margin-right: 0.5rem;"></i> <b>Meta Ads Data Science:</b> We optimize your advertising campaigns through meticulous data analysis and event tracking.</li>
+                    </ul>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span>Direct Call / Business line</span>
+                                <a href="tel:+918950929482" class="detail-link">+91 89509 29482</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <span>WhatsApp chat</span>
+                                <a href="https://wa.me/919996829482?text=Hi%20Vashu%2C%20I%20am%20interested%20in%20your%20services%21" target="_blank" class="detail-link">+91 99968 29482</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive form -->
+                <div class="contact-action card-glass">
+                    <h3>Begin Your Project Consultation</h3>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">To start scaling your business, please provide the necessary information. A consultation will allow us to understand your vision and outline a strategic plan for execution.</p>
+                    <form id="contact-form" class="custom-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-biz">Business / Project Name</label>
+                                <input type="text" id="form-biz" placeholder="Apex Inc.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-needs">What do you need help with?</label>
+                            <select id="form-needs">
+                                <option value="Web & App Development">Web & Mobile Application Development</option>
+                                <option value="Meta Ads & DS tracking">Meta Data Science & Event Tracking</option>
+                                <option value="AI / Bot automation">AI Automations & Integrations</option>
+                                <option value="Social growth support">Social & Sales Growth</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-msg">Project brief (Optional)</label>
+                            <textarea id="form-msg" rows="4" placeholder="Briefly describe your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Consultation Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Vashu Sangwan. All rights reserved.</p>
+            <p class="footer-subtext">BCA Amity University Noida | Freelance Tech & Sales Optimization</p>
+            <p class="footer-subtext"><a href="privacy.html" style="color: var(--text-muted); margin-right: 1rem;">Privacy Policy</a> <a href="terms.html" style="color: var(--text-muted);">Terms & Services</a></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Conversion Widget -->
+    <a href="https://wa.me/919996829482?text=Hi%20Vashu%2C%20I%20am%20interested%20in%20your%20services%21" target="_blank" class="float-wa-btn" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-tooltip">Quick Chat 🔥</span>
+    </a>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
